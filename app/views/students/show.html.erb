@@ -1,0 +1,9 @@
+<h1> Student </h1>
+<%= @student.name%>
+
+<ul>
+    <li>
+        <%= link_to @student.instructor.name, "/instructors/#{@student.instructor.id}" %>
+    </li>
+</ul>
+
